@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<style>
+	.sample {
+		width: 90%;
+		height: 400px;
+		background-color: tomato;
+		margin-bottom: 20px;
+	}
+
+	.stage_1 {
+		background-color: green;
+	}
+
+	.stage_2 {
+		background-color: yellow;
+	}
+
+	.stage_3 {
+		background-color: grey;
+	}
+
+	.stage_4 {
+		background-color: blue;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function () {   				// Функція слухається після повного завантаження документу
+		$(".clicker").click(function () {			// декларується клік на елемент
+			let $el = $(this),						// this - в jQuery ЗАВЖДИ елемент, на який ти (клікаєш/наводиш/...)
+				// $() - перетворює лемент в jQuery елемент
+				id = $el.attr("id"),				// .attr("id") - зчитуємо значення атрибута "id" елемента .clicker
+				offset = $("." + id).offset().top 	// вираховуєм відстань від елемента до верху сторінки
+
+			$("body,html").animate({ scrollTop: offset }, 500);
+
+			/*
+				$("body,html").animate(...
+				Через нативну функцію анімації, яку приписуємо до елементів html і body
+				...({ scrollTop:
+				Використовуючи аргумент scrollTop
+				... offset }
+				Вирахувавши відстань елемента [Наприклад] .stage_1 від верху сторінки
+				Скролимо сторінку з тривалістю анімації в 400 мілісекунд
+			*/
+		});
+	});
+</script>
+
+<body>
+	<ul>
+		<li class="clicker" id="stage_1"><a href="javascript:;">SAMPLE 1</a></li>
+		<li class="clicker" id="stage_2"><a href="javascript:;">SAMPLE 2</a></li>
+		<li class="clicker" id="stage_3"><a href="javascript:;">SAMPLE 3</a></li>
+		<li class="clicker" id="stage_4"><a href="javascript:;">SAMPLE 4</a></li>
+	</ul>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample stage_1"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample stage_2"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample stage_3"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample"></div>
+	<div class="sample stage_4"></div>
+</body>
+
+</html>

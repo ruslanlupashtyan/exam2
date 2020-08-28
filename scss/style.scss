@@ -1,0 +1,95 @@
+@font-face{
+    font-family: 'GothamBook';
+    src: url(../);
+}
+
+
+*{
+    .link {
+       list-style: none;
+       text-decoration: none;
+    }
+    ul {
+        margin: 0;
+        padding-left: 0;
+    }
+}
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+}
+
+.header {
+    background-image: url(../images/background_head.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10px;
+    .top_wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        .logo_img{
+            height: 55px;
+            width: 250px;
+        }
+        .menu {
+            display: flex;
+            max-width: 600px;
+            width: 100%;
+            justify-content: space-between;
+            &_link {
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                align-items: center;
+                .circle {
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #ffffff;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+                .circle_fill {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #ffffff;
+                    border: 1px solid #ffffff;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    display: none;
+                }
+            }
+            &_link:hover .circle {
+                display: none;
+            }
+            &_link:hover .circle_fill {
+                display: block;
+            }
+        }
+        .social {
+            display: flex;
+            justify-content: space-around;
+            max-width: 160px;
+            width: 100%;
+            a {
+                height: 40px;
+                width: 40px;
+                font-size: 20px;
+                border: 1px solid #ffffff;
+                border-radius: 50%;
+                display: block;
+                text-align: center;
+                color: #000;
+                .fab {
+                    margin-top: 10px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
