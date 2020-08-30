@@ -1,3 +1,6 @@
+/*SETTINGS*/
+/*COLORS*/
+/*FONTS*/
 /* FONTS */
 @font-face {
   font-family: 'GothamBook';
@@ -35,22 +38,32 @@
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 /* GENERAL */
-/* line 40, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-  /* line 42, ../scss/style.scss */
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  /* line 58, ../scss/style.scss */
   * ul {
     margin: 0;
     padding-left: 0; }
 
-/* line 48, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 body {
   margin: 0 auto;
   min-width: 1150px;
   max-width: 1600px; }
 
-/* line 53, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
+.h2 {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "GothamMedium"; }
+
+/* line 76, ../scss/style.scss */
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,13 +73,13 @@ body {
       -ms-flex-direction: row;
           flex-direction: row; }
 
-/* line 58, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 .background_item {
   width: 585px;
   height: 470px;
   background-color: #55B7FF; }
 
-/* line 64, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .container {
   margin: 0 auto;
   max-width: 1170px;
@@ -82,7 +95,7 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 72, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 .header {
   margin: 0 auto;
   width: 100%;
@@ -101,11 +114,11 @@ body {
           align-items: center;
   height: 50px;
   z-index: 1; }
-  /* line 85, ../scss/style.scss */
+  /* line 108, ../scss/style.scss */
   .header .logo_img {
     height: 55px;
     width: 250px; }
-  /* line 89, ../scss/style.scss */
+  /* line 112, ../scss/style.scss */
   .header .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -115,7 +128,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    /* line 94, ../scss/style.scss */
+    /* line 117, ../scss/style.scss */
     .header .menu_link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -125,14 +138,14 @@ body {
               align-items: center;
       text-transform: uppercase;
       align-items: center; }
-      /* line 100, ../scss/style.scss */
+      /* line 123, ../scss/style.scss */
       .header .menu_link .circle {
         width: 10px;
         height: 10px;
         border: 1px solid #ffffff;
         border-radius: 50%;
         margin-right: 5px; }
-      /* line 107, ../scss/style.scss */
+      /* line 130, ../scss/style.scss */
       .header .menu_link .circle_fill {
         width: 10px;
         height: 10px;
@@ -141,18 +154,18 @@ body {
         border-radius: 50%;
         margin-right: 5px;
         display: none; }
-      /* line 116, ../scss/style.scss */
+      /* line 139, ../scss/style.scss */
       .header .menu_link .link {
         font-family: 'GothamBook';
         text-decoration: none;
         color: #ffffff; }
-    /* line 122, ../scss/style.scss */
+    /* line 145, ../scss/style.scss */
     .header .menu_link:hover .circle {
       display: none; }
-    /* line 125, ../scss/style.scss */
+    /* line 148, ../scss/style.scss */
     .header .menu_link:hover .circle_fill {
       display: block; }
-  /* line 129, ../scss/style.scss */
+  /* line 152, ../scss/style.scss */
   .header .social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -161,7 +174,7 @@ body {
         justify-content: space-around;
     max-width: 160px;
     width: 100%; }
-    /* line 134, ../scss/style.scss */
+    /* line 157, ../scss/style.scss */
     .header .social a {
       height: 40px;
       width: 40px;
@@ -171,47 +184,115 @@ body {
       display: block;
       text-align: center;
       color: #000; }
-      /* line 143, ../scss/style.scss */
+      /* line 166, ../scss/style.scss */
       .header .social a .fab {
         margin-top: 10px;
         color: #ffffff; }
-    /* line 148, ../scss/style.scss */
+    /* line 171, ../scss/style.scss */
     .header .social a:hover {
       -webkit-animation-name: rotate;
               animation-name: rotate;
       -webkit-animation-duration: 1s;
               animation-duration: 1s; }
 
-/* line 154, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 .news {
   background-image: url(../images/background_news.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%; }
-  /* line 160, ../scss/style.scss */
+  width: 100%;
+  min-height: 900px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px; }
+  /* line 188, ../scss/style.scss */
   .news .vertical_line {
     height: 100px;
     border-bottom: 1px solid #fff;
     width: 100px; }
-  /* line 165, ../scss/style.scss */
+  /* line 193, ../scss/style.scss */
   .news .news_slider {
-    width: 100%; }
-    /* line 167, ../scss/style.scss */
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 198, ../scss/style.scss */
     .news .news_slider .news_slide {
       height: 515px;
       margin: 0 15px;
       background-color: #fff; }
-      /* line 171, ../scss/style.scss */
+      /* line 202, ../scss/style.scss */
       .news .news_slider .news_slide .img_cont {
         height: 240px;
         width: 100%;
         overflow: hidden; }
-      /* line 176, ../scss/style.scss */
-      .news .news_slider .news_slide .h4 {
-        text-transform: uppercase; }
+      /* line 207, ../scss/style.scss */
+      .news .news_slider .news_slide .descr_cont {
+        padding: 30px 20px; }
+        /* line 209, ../scss/style.scss */
+        .news .news_slider .news_slide .descr_cont .h4 {
+          margin: 0;
+          text-transform: uppercase;
+          font-family: "GothamBold";
+          font-size: 22px;
+          color: #2c4058;
+          line-height: 34px; }
+        /* line 217, ../scss/style.scss */
+        .news .news_slider .news_slide .descr_cont .slide_description {
+          font-family: "OpenSansRegular";
+          line-height: 30px;
+          font-size: 18px;
+          letter-spacing: -1px;
+          margin: 14px 0;
+          color: #4b5562; }
+        /* line 225, ../scss/style.scss */
+        .news .news_slider .news_slide .descr_cont .author_content {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          /* line 228, ../scss/style.scss */
+          .news .news_slider .news_slide .descr_cont .author_content .circle_box {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+            overflow: hidden; }
+          /* line 235, ../scss/style.scss */
+          .news .news_slider .news_slide .descr_cont .author_content .circle_description {
+            height: 60px;
+            font-family: "GothamBook";
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; }
+            /* line 241, ../scss/style.scss */
+            .news .news_slider .news_slide .descr_cont .author_content .circle_description .author_name {
+              text-transform: uppercase;
+              font-size: 22px;
+              color: #2c4058; }
+            /* line 246, ../scss/style.scss */
+            .news .news_slider .news_slide .descr_cont .author_content .circle_description .date {
+              color: #55b7ff; }
 
 /* SLIDER TOP*/
-/* line 190, ../scss/style.scss */
+/* line 263, ../scss/style.scss */
 .my-dots {
   position: absolute;
   display: -webkit-box;
@@ -230,16 +311,16 @@ body {
   text-align: center;
   top: 50%; }
 
-/* line 202, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 .my-dots li {
   position: relative;
   width: 20px;
   height: 20px;
-  margin: 0 5px;
+  margin: 20px 5px;
   padding: 0;
   cursor: pointer; }
 
-/* line 211, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 .my-dots li button {
   font-size: 0;
   line-height: 0;
@@ -253,17 +334,17 @@ body {
   outline: none;
   background: transparent; }
 
-/* line 225, ../scss/style.scss */
+/* line 298, ../scss/style.scss */
 .my-dots li button:hover,
 .my-dots li button:focus {
   outline: none; }
 
-/* line 230, ../scss/style.scss */
+/* line 303, ../scss/style.scss */
 .my-dots li button:hover:before,
 .my-dots li button:focus:before {
   opacity: 1; }
 
-/* line 235, ../scss/style.scss */
+/* line 308, ../scss/style.scss */
 .my-dots li button:before {
   font-family: 'slick';
   font-size: 6px;
@@ -280,17 +361,92 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 253, ../scss/style.scss */
+/* line 326, ../scss/style.scss */
 .my-dots li.slick-active button:before {
   opacity: .75;
   color: white;
   background-color: #fff;
   border-radius: 50%; }
 
-/* line 260, ../scss/style.scss */
+/* line 333, ../scss/style.scss */
 .slider_box img {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover; }
+
+/*SLIDER MIDDLE*/
+/*DOTS*/
+/* line 344, ../scss/style.scss */
+.slider_dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: -50px;
+  left: calc(50% - 124px); }
+  /* line 351, ../scss/style.scss */
+  .slider_dots li {
+    list-style: none; }
+  /* line 354, ../scss/style.scss */
+  .slider_dots button {
+    height: 9px;
+    width: 9px;
+    margin: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    color: transparent; }
+
+/* line 364, ../scss/style.scss */
+.slider_dots li button:hover,
+.slider_dots li button:focus {
+  outline: none; }
+
+/* line 368, ../scss/style.scss */
+.slider_dots li button:hover {
+  background-color: #fff;
+  opacity: 0.5; }
+
+/* line 372, ../scss/style.scss */
+.slider_dots li button:focus {
+  background-color: #fff; }
+
+/* line 375, ../scss/style.scss */
+.slider_dots li.slick-active button:before {
+  opacity: .75;
+  color: white;
+  background-color: #fff;
+  border-radius: 50%; }
+
+/*ARROWS*/
+/* line 385, ../scss/style.scss */
+.slick_arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: transparent; }
+  /* line 391, ../scss/style.scss */
+  .slick_arrow i {
+    color: #fff;
+    text-align: center; }
+
+/* line 396, ../scss/style.scss */
+.slick-prev {
+  position: absolute;
+  z-index: 1;
+  left: -60px; }
+
+/* line 401, ../scss/style.scss */
+.slick-next {
+  position: absolute;
+  z-index: 1;
+  right: -60px; }
 
 /*# sourceMappingURL=style.css.map */

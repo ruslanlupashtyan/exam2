@@ -1,4 +1,18 @@
-                    /* FONTS */
+                    /*SETTINGS*/
+        /*COLORS*/
+$main_color: #2c4058;
+$text_color: #4b5562;
+$date_color: #55b7ff;
+
+        /*FONTS*/
+        $GothamBook: 'GothamBook';
+        $GothamBold: 'GothamBold';
+        $GothamMedium: 'GothamMedium';
+        $OpenSans: 'OpenSansRegular';
+        $OpenSansItalic: 'OpenSansItalic';
+
+
+                   /* FONTS */
 @font-face{
     font-family: 'GothamBook';
     src: url(../fonts/GothamBook.woff);
@@ -39,6 +53,8 @@ from {
 /* GENERAL */
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     ul {
         margin: 0;
         padding-left: 0;
@@ -49,6 +65,13 @@ body {
     margin: 0 auto;
     min-width: 1150px;
     max-width: 1600px;
+}
+.h2 {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $GothamMedium;
 }
 .row {
     display: flex;
@@ -156,6 +179,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    min-height: 900px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; 
 
     .vertical_line {
         height: 100px;
@@ -163,7 +191,10 @@ body {
         width: 100px;
     }
     .news_slider {
+        position: relative;
         width: 100%;
+        display: flex;
+        align-items: center;
         .news_slide {
             height: 515px;
             margin: 0 15px;
@@ -173,8 +204,50 @@ body {
                     width: 100%;
                     overflow: hidden;
                 }
-                .h4 {
-                    text-transform: uppercase;
+                .descr_cont {
+                    padding: 30px 20px;
+                    .h4 {
+                        margin: 0;
+                        text-transform: uppercase;
+                        font-family: $GothamBold;
+                        font-size: 22px;
+                        color: $main_color;
+                        line-height: 34px;
+                    }
+                    .slide_description {
+                        font-family: $OpenSans;
+                        line-height: 30px;
+                        font-size: 18px;
+                        letter-spacing: -1px;
+                        margin: 14px 0;
+                        color: $text_color;
+                    }
+                    .author_content {
+                        display: flex;
+                        align-items: center;
+                        .circle_box {
+                            height: 60px;
+                            width: 60px;
+                            border-radius: 50%;
+                            margin-right: 20px;
+                            overflow: hidden;
+                        }
+                        .circle_description {
+                            height: 60px;
+                            font-family: $GothamBook;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            .author_name {
+                                text-transform: uppercase;
+                                font-size: 22px;
+                                color: $main_color;
+                            }
+                            .date {
+                                color: $date_color;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -203,7 +276,7 @@ body {
         position: relative;
         width: 20px;
         height: 20px;
-        margin: 0 5px;
+        margin: 20px 5px;
         padding: 0;
         cursor: pointer;
       }
@@ -262,3 +335,71 @@ body {
             object-fit: cover;
         }
     }
+
+
+                    /*SLIDER MIDDLE*/
+    
+    
+            /*DOTS*/
+    .slider_dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: -50px;
+        left: calc(50% - 124px);
+        li {
+            list-style: none;
+        }
+        button {
+            height: 9px;
+            width: 9px;
+            margin: 20px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background-color: transparent;
+            color: transparent;
+        }
+    }
+    .slider_dots li button:hover,
+    .slider_dots li button:focus {
+        outline: none;
+      }
+    .slider_dots li button:hover {
+        background-color: #fff;
+        opacity: 0.5;
+      }
+    .slider_dots li button:focus {
+        background-color: #fff;
+      }
+    .slider_dots li.slick-active button:before {
+        opacity: .75;
+        color: white;
+        background-color: #fff;
+        border-radius: 50%;   
+      }
+
+
+
+            /*ARROWS*/
+.slick_arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    i {
+        color: #fff;
+        text-align: center;
+    }
+}
+.slick-prev {
+    position: absolute;
+    z-index: 1;
+    left: -60px;
+}
+.slick-next {
+    position: absolute;
+    z-index: 1;
+    right: -60px;
+}
