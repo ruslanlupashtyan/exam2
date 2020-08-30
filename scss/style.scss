@@ -63,7 +63,7 @@ from {
 
 body {
     margin: 0 auto;
-    min-width: 1150px;
+    // min-width: 1150px;
     max-width: 1600px;
 }
 .h2 {
@@ -195,10 +195,12 @@ body {
         width: 100%;
         display: flex;
         align-items: center;
+    }
         .news_slide {
             height: 515px;
             margin: 0 15px;
             background-color: #fff;
+
                 .img_cont {
                     height: 240px;
                     width: 100%;
@@ -251,12 +253,7 @@ body {
                 }
             }
         }
-    }
-
-
-
-
-
+    
 
 
     /* SLIDER TOP*/
@@ -402,4 +399,11 @@ body {
     position: absolute;
     z-index: 1;
     right: -60px;
+}
+
+
+@media (max-width: 1300px) {
+    .news {
+        padding: 0 70px;
+    }
 }

@@ -52,7 +52,6 @@
 /* line 64, ../scss/style.scss */
 body {
   margin: 0 auto;
-  min-width: 1150px;
   max-width: 1600px; }
 
 /* line 69, ../scss/style.scss */
@@ -225,74 +224,74 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    /* line 198, ../scss/style.scss */
-    .news .news_slider .news_slide {
-      height: 515px;
-      margin: 0 15px;
-      background-color: #fff; }
-      /* line 202, ../scss/style.scss */
-      .news .news_slider .news_slide .img_cont {
-        height: 240px;
-        width: 100%;
-        overflow: hidden; }
-      /* line 207, ../scss/style.scss */
-      .news .news_slider .news_slide .descr_cont {
-        padding: 30px 20px; }
-        /* line 209, ../scss/style.scss */
-        .news .news_slider .news_slide .descr_cont .h4 {
-          margin: 0;
-          text-transform: uppercase;
-          font-family: "GothamBold";
-          font-size: 22px;
-          color: #2c4058;
-          line-height: 34px; }
-        /* line 217, ../scss/style.scss */
-        .news .news_slider .news_slide .descr_cont .slide_description {
-          font-family: "OpenSansRegular";
-          line-height: 30px;
-          font-size: 18px;
-          letter-spacing: -1px;
-          margin: 14px 0;
-          color: #4b5562; }
-        /* line 225, ../scss/style.scss */
-        .news .news_slider .news_slide .descr_cont .author_content {
+  /* line 199, ../scss/style.scss */
+  .news .news_slide {
+    height: 515px;
+    margin: 0 15px;
+    background-color: #fff; }
+    /* line 204, ../scss/style.scss */
+    .news .news_slide .img_cont {
+      height: 240px;
+      width: 100%;
+      overflow: hidden; }
+    /* line 209, ../scss/style.scss */
+    .news .news_slide .descr_cont {
+      padding: 30px 20px; }
+      /* line 211, ../scss/style.scss */
+      .news .news_slide .descr_cont .h4 {
+        margin: 0;
+        text-transform: uppercase;
+        font-family: "GothamBold";
+        font-size: 22px;
+        color: #2c4058;
+        line-height: 34px; }
+      /* line 219, ../scss/style.scss */
+      .news .news_slide .descr_cont .slide_description {
+        font-family: "OpenSansRegular";
+        line-height: 30px;
+        font-size: 18px;
+        letter-spacing: -1px;
+        margin: 14px 0;
+        color: #4b5562; }
+      /* line 227, ../scss/style.scss */
+      .news .news_slide .descr_cont .author_content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        /* line 230, ../scss/style.scss */
+        .news .news_slide .descr_cont .author_content .circle_box {
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          margin-right: 20px;
+          overflow: hidden; }
+        /* line 237, ../scss/style.scss */
+        .news .news_slide .descr_cont .author_content .circle_description {
+          height: 60px;
+          font-family: "GothamBook";
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          /* line 228, ../scss/style.scss */
-          .news .news_slider .news_slide .descr_cont .author_content .circle_box {
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            margin-right: 20px;
-            overflow: hidden; }
-          /* line 235, ../scss/style.scss */
-          .news .news_slider .news_slide .descr_cont .author_content .circle_description {
-            height: 60px;
-            font-family: "GothamBook";
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            -ms-flex-pack: distribute;
-                justify-content: space-around; }
-            /* line 241, ../scss/style.scss */
-            .news .news_slider .news_slide .descr_cont .author_content .circle_description .author_name {
-              text-transform: uppercase;
-              font-size: 22px;
-              color: #2c4058; }
-            /* line 246, ../scss/style.scss */
-            .news .news_slider .news_slide .descr_cont .author_content .circle_description .date {
-              color: #55b7ff; }
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+          /* line 243, ../scss/style.scss */
+          .news .news_slide .descr_cont .author_content .circle_description .author_name {
+            text-transform: uppercase;
+            font-size: 22px;
+            color: #2c4058; }
+          /* line 248, ../scss/style.scss */
+          .news .news_slide .descr_cont .author_content .circle_description .date {
+            color: #55b7ff; }
 
 /* SLIDER TOP*/
-/* line 263, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 .my-dots {
   position: absolute;
   display: -webkit-box;
@@ -311,7 +310,7 @@ body {
   text-align: center;
   top: 50%; }
 
-/* line 275, ../scss/style.scss */
+/* line 272, ../scss/style.scss */
 .my-dots li {
   position: relative;
   width: 20px;
@@ -320,7 +319,7 @@ body {
   padding: 0;
   cursor: pointer; }
 
-/* line 284, ../scss/style.scss */
+/* line 281, ../scss/style.scss */
 .my-dots li button {
   font-size: 0;
   line-height: 0;
@@ -334,17 +333,17 @@ body {
   outline: none;
   background: transparent; }
 
-/* line 298, ../scss/style.scss */
+/* line 295, ../scss/style.scss */
 .my-dots li button:hover,
 .my-dots li button:focus {
   outline: none; }
 
-/* line 303, ../scss/style.scss */
+/* line 300, ../scss/style.scss */
 .my-dots li button:hover:before,
 .my-dots li button:focus:before {
   opacity: 1; }
 
-/* line 308, ../scss/style.scss */
+/* line 305, ../scss/style.scss */
 .my-dots li button:before {
   font-family: 'slick';
   font-size: 6px;
@@ -361,14 +360,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 326, ../scss/style.scss */
+/* line 323, ../scss/style.scss */
 .my-dots li.slick-active button:before {
   opacity: .75;
   color: white;
   background-color: #fff;
   border-radius: 50%; }
 
-/* line 333, ../scss/style.scss */
+/* line 330, ../scss/style.scss */
 .slider_box img {
   height: 100vh;
   -o-object-fit: cover;
@@ -376,7 +375,7 @@ body {
 
 /*SLIDER MIDDLE*/
 /*DOTS*/
-/* line 344, ../scss/style.scss */
+/* line 341, ../scss/style.scss */
 .slider_dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,10 +389,10 @@ body {
   position: absolute;
   bottom: -50px;
   left: calc(50% - 124px); }
-  /* line 351, ../scss/style.scss */
+  /* line 348, ../scss/style.scss */
   .slider_dots li {
     list-style: none; }
-  /* line 354, ../scss/style.scss */
+  /* line 351, ../scss/style.scss */
   .slider_dots button {
     height: 9px;
     width: 9px;
@@ -403,21 +402,21 @@ body {
     background-color: transparent;
     color: transparent; }
 
-/* line 364, ../scss/style.scss */
+/* line 361, ../scss/style.scss */
 .slider_dots li button:hover,
 .slider_dots li button:focus {
   outline: none; }
 
-/* line 368, ../scss/style.scss */
+/* line 365, ../scss/style.scss */
 .slider_dots li button:hover {
   background-color: #fff;
   opacity: 0.5; }
 
-/* line 372, ../scss/style.scss */
+/* line 369, ../scss/style.scss */
 .slider_dots li button:focus {
   background-color: #fff; }
 
-/* line 375, ../scss/style.scss */
+/* line 372, ../scss/style.scss */
 .slider_dots li.slick-active button:before {
   opacity: .75;
   color: white;
@@ -425,28 +424,33 @@ body {
   border-radius: 50%; }
 
 /*ARROWS*/
-/* line 385, ../scss/style.scss */
+/* line 382, ../scss/style.scss */
 .slick_arrow {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 1px solid #fff;
   background-color: transparent; }
-  /* line 391, ../scss/style.scss */
+  /* line 388, ../scss/style.scss */
   .slick_arrow i {
     color: #fff;
     text-align: center; }
 
-/* line 396, ../scss/style.scss */
+/* line 393, ../scss/style.scss */
 .slick-prev {
   position: absolute;
   z-index: 1;
   left: -60px; }
 
-/* line 401, ../scss/style.scss */
+/* line 398, ../scss/style.scss */
 .slick-next {
   position: absolute;
   z-index: 1;
   right: -60px; }
+
+@media (max-width: 1300px) {
+  /* line 406, ../scss/style.scss */
+  .news {
+    padding: 0 70px; } }
 
 /*# sourceMappingURL=style.css.map */
