@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../fontawesome-free-5.13.1-web/css/all.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgVDqU6Zy5J-plmJTGsIsyYkifN2l3mBw&callback=initMap&libraries=&v=weekly"
+        defer></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
@@ -55,62 +58,56 @@
         <img src="../images/slide4.jfif" alt="">
         <img src="../images/slide5.jfif" alt="">
     </div>
-    <!-- <section class="section about">
+    <section class="section projects" id="projects">
         <div class="container">
-            <h2 class="h2">
+            <h2 class="projects__title">
                 what we do
             </h2>
-            <div class="row">
-                <div class="about_img">
-                    <div class="background_item">
-
+            <div class="img_bg"></div>
+            <div class="project__body">
+                <div class="project__body__img animate__animated mov">
+                    <div class="project-img__wrap">
+                        <img src="../images/about_1.png" alt="what we do" class="project__img">
                     </div>
-                    <img about_ src="../images/about_1.png" alt="">
+
                 </div>
-                <div class="about_description">
-                    <h5 class="h5">one world</h5>
-                    <h3 class="h3">trade center</h3>
-                    <p class="description_txt">
-                        ncreasing prosperity in our lives can be accomplished by having the right frame of mind. The
+                <div class="project__body__content">
+                    <p class="content__subtitle">One World</p>
+                    <h2 class="content__title">Trade Center</h2>
+                    <p class="content__description">
+                        Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
                         truth is, our thoughts are very powerful.
                     </p>
-                    <button class="btn">
-                        more details
-                    </button>
-                    <p class="map_point">
-                        New York City, United States - 1776 feet
-                        Hong Kong - 1588 Feet
-                    </p>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="about_description">
-                    <h5 class="h5">international</h5>
-                    <h3 class="h3">commerce centre</h3>
-                    <p class="description_txt">
-                        Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition
-                        and how a digital advertising network may help.
-                    </p>
-                    <button class="btn">
-                        more details
-                    </button>
-                    <p class="map_point">
-                        Hong Kong - 1588 Feet
-                    </p>
-                </div>
-                <div class="about_img">
-                    <div class="background_item">
-                    </div>
-                    <img src="../images/about_2.png" alt="">
+                    <button class="btn">more details</button>
+                    <p class="icon-map-marker content__address">New York City, United States - 1776 feet</p>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+    <section class="projects next_project">
+        <div class="container">
+            <div class="img_bg__next"></div>
+            <div class="project__body change">
+                <div class="project__body__img animate__animated mov2">
+                    <div class="clearpad">
+                        <img src="../images/about_2.png" alt="what we do" class="project__img">
+                    </div>
+                </div>
+                <div class=" project__body__content body__content__next">
+                    <p class="content__subtitle">One World</p>
+                    <h2 class="content__title">Trade Center</h2>
+                    <p class="content__description">
+                        Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+                        The
+                        truth is, our thoughts are very powerful.
+                    </p>
+                    <button class="btn">more details</button>
+                    <p class="icon-map-marker content__address">New York City, United States - 1776 feet</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section news slick_slider ">
-        <!-- <button type="button" class="slick-prev">
-            <i class="fas fa-angle-left"></i>
-        </button> -->
         <div class="container">
             <div class="vertical_line">
             </div>
@@ -132,7 +129,6 @@
                         <div class="author_content">
                             <div class="circle_box">
                                 <img src="../images/circle1.png" alt="">
-                                <!-- <img src="../images/gallery1.png" alt=""> -->
                             </div>
                             <div class="circle_description">
                                 <p class="author_name">
@@ -252,6 +248,86 @@
             </div>
         </div>
 
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="gallery__title">gallery</h2>
+            <div class="grid-container animate__animated mov3">
+                <div class="big_pic">
+                    <a href="../images/gallery1.png" data-fancybox data-caption="Caption for single image">
+                        <img src="../images/gallery1.png" alt="big pic" class="gallery-pic">
+                    </a>
+                </div>
+                <div class="small_pic1">
+                    <a href="../images/gallery2.png" data-fancybox data-caption="Caption for single image">
+                        <img src="../images/gallery2.png" alt="small1" class="gallery-pic">
+                    </a>
+                </div>
+                <div class="small_pic2">
+                    <a href="../images/gallery3.png" data-fancybox data-caption="Caption for single image">
+                        <img src="../images/gallery3.png" alt="small2" class="gallery-pic">
+                    </a>
+                </div>
+                <div class="small_pic3">
+                    <a href="../images/gallery4.png" data-fancybox data-caption="Caption for single image">
+                        <img src="../images/gallery4.png" alt="small3" class="gallery-pic">
+                    </a>
+                </div>
+                <div class="small_pic4">
+                    <a href="../images/gallery5.png" data-fancybox data-caption="Caption for single image">
+                        <img src="../images/gallery5.png" alt="small3" class="gallery-pic">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="gallery__btn">see more</button>
+    </section>
+    <section class="contact" id="contact">
+        <div id="map" class="map"></div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__body">
+                    <svg class="logo_img">
+                        <use xlink:href="../images/sprite.svg#logo"></use>
+                    </svg>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <p class="footer__content"> Copyrights © 2017 Monticello | Made with <span class="icon-heart"></span>
+                    by Ga Huy
+                </p>
+            </div>
+            <div class="footer__form__wrap">
+                <div class="footer__form">
+                    <h2 class="form__title">get in touch</h2>
+                    <div class="wrap__form">
+                        <div class="form__content">
+                            <a class="icon-map-marker form__icon"><span class="form__address">91 Nolan Extensions
+                                    Suite 670</span></a>
+
+                            <a class="icon-phone form__icon"><span class="form__address">+001 356-868-2454</span></a>
+
+                            <a class="icon-inbox form__icon"><span class="form__address">gahuy93@gmail.com</span></a>
+
+                            <a class="icon-clock-o form__icon"><span class="form__address">From 07:05AM to
+                                    19:30PM</span></a>
+                        </div>
+                        <div class="form__inf">
+                            <input type="text" class="inf__input" placeholder="Nme">
+                            <input type="email" class="inf__input" placeholder="Email">
+                            <button class="form__button">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
